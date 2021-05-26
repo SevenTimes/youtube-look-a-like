@@ -7,6 +7,11 @@ body {
   color: white;
 }
 
+a {
+  color: #3ea6ff;
+  text-decoration: none;
+}
+
 .fas {
   color: white;
 }
@@ -221,4 +226,53 @@ input:focus {
 
 .gray-text {
   color: #aaa;
+}
+
+/* Channel */
+
+.channel {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 0;
+  border-bottom: 1px solid #313131;
+}
+
+.text-wrap img {
+  border-radius: 50%;
+  float: left;
+  padding-right: 10px;
+}
+
+.channel-name {
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 8px;
+}
+
+.subs {
+  padding-top: 5px;
+  font-size: 12px;
+}
+
+.description-text,
+.show-more {
+  font-size: 14px;
+  padding-top: 10px;
+  padding-left: 58px;
+  line-height: 20px;
+}
+
+.show-more {
+  padding-top: 32px;
+  font-weight: 600;
+}
+
+.subscribe {
+  background-color: #cc0000;
+  color: white;
+  font-weight: 600;
+  width: 110px;
+  height: 37px;
+  border-radius: 2px;
+  float: right;
 }
