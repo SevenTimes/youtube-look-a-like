@@ -4,10 +4,19 @@ body {
   background-color: #181818;
   font-size: 10px;
   font-family: Roboto, Arial, sans-serif;
+  color: white;
 }
 
 .fas {
   color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'content thumbnails';
+  grid-template-columns: 7fr 3fr;
 }
 
 /* Header */
@@ -25,6 +34,7 @@ header {
   padding: 16px;
   background-color: #202020;
   z-index: 1;
+  grid-area: header;
 }
 
 button {
@@ -110,10 +120,10 @@ input:focus {
 .content {
   display: flex;
   flex-direction: column;
-  width: 70%;
-  background-color: white;
+  width: 100%;
   margin-top: 80px;
   margin-left: 104px;
+  grid-area: content;
 }
 
 .video-container {
@@ -128,4 +138,57 @@ input:focus {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+/* Up Next Section */
+
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  grid-area: thumbnails;
+  margin-top: 80px;
+  margin-left: 128px;
+  margin-right: 104px;
+}
+
+.thumbnail {
+  display: flex;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.preview {
+  position: relative;
+}
+
+.preview p {
+  position: absolute;
+  bottom: 0px;
+  left: 128px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-weight: 700;
+}
+
+.preview img {
+  max-width: 168px;
+}
+
+.thumbnail-description {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.thumbnail-description div {
+  padding-bottom: 4px;
+}
+
+.track-name {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.gray-text {
+  color: #aaa;
 }
