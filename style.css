@@ -140,6 +140,36 @@ input:focus {
   height: 100%;
 }
 
+.description {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #313131;
+}
+
+.video-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 32px 0 14px;
+}
+
+.under-title {
+  font-size: 14px;
+}
+
+.icons {
+  align-self: flex-end;
+  color: #909090;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.icons .fas {
+  color: #909090;
+  padding: 0 2px 0 20px;
+}
+
 /* Up Next Section */
 
 .thumbnails {
